@@ -82,6 +82,8 @@ CREATE TABLE users (
   password TEXT NOT NULL
 );
 
+5.Enter the postgresql database password in node js password section of pg client
+
 
 4.Start the server:
 node index.js
