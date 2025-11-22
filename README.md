@@ -10,6 +10,7 @@
 ![Image Alt](https://github.com/shahidraza-web/-User-Authentication-System-Node.js-Express-PostgreSQL-EJS-BCrypt-/blob/65d3eaf6fa552e9d576bf41f68a41d4cb06cd408/Authentication5.jpg)
 
 🚀 Features
+
 🔐 User Registration
 1.Users can create an account using email and password
 2.Passwords are hashed using bcrypt before saving to the database
