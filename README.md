@@ -8,3 +8,19 @@
 ![Image Alt](https://github.com/shahidraza-web/-User-Authentication-System-Node.js-Express-PostgreSQL-EJS-BCrypt-/blob/10fe4d692b18162985f5e8e9af2bc492c1716d7c/Authentication3.jpg)
 
 ![Image Alt](https://github.com/shahidraza-web/-User-Authentication-System-Node.js-Express-PostgreSQL-EJS-BCrypt-/blob/65d3eaf6fa552e9d576bf41f68a41d4cb06cd408/Authentication5.jpg)
+
+🚀 Features
+🔐 User Registration
+1.Users can create an account using email and password
+2.Passwords are hashed using bcrypt before saving to the database
+3.Prevents duplicate registrations with the same email
+
+🔑 User Login
+1.Validates user email
+2.Compares login password with hashed password stored in PostgreSQL
+3.Secure login validation using bcrypt.compare()
+
+
+📦 PostgreSQL Integration
+1.Uses pg Client to connect to a PostgreSQL database
+2.Stores user credentials securely
