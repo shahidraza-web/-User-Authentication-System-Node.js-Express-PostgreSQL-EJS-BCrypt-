@@ -9,19 +9,19 @@
 
 ![Image Alt](https://github.com/shahidraza-web/-User-Authentication-System-Node.js-Express-PostgreSQL-EJS-BCrypt-/blob/65d3eaf6fa552e9d576bf41f68a41d4cb06cd408/Authentication5.jpg)
 
-🚀 Features
+🚀 Features:
 
-🔐 User Registration
+🔐 User Registration:
 1.Users can create an account using email and password
 2.Passwords are hashed using bcrypt before saving to the database
 3.Prevents duplicate registrations with the same email
 
-🔑 User Login
+🔑 User Login:
 1.Validates user email
 2.Compares login password with hashed password stored in PostgreSQL
 3.Secure login validation using bcrypt.compare()
 
-🎨 EJS Templating
+🎨 EJS Templating:
 
 1.Clean UI pages for:
 2.Home
@@ -30,14 +30,14 @@
 5.Secrets page (after successful login)
 
 
-🛡️ Security Best Practices
+🛡️ Security Best Practices:
 
 1.Password hashing with saltRounds = 10
 2.No plain-text password storage
 3.Backend validation for both registration and login
 
 
-🧩 Tech Stack
+🧩 Tech Stack:
 
 1.Node.js
 2.Express.js
@@ -48,7 +48,7 @@
 7.body-parser
 
 
-📚 How It Works
+📚 How It Works:
 
 
 1️⃣ Registration Flow
@@ -65,5 +65,27 @@ Successful login → loads secrets.ejs
 Incorrect password → error prompt
 
 
-1.Uses pg Client to connect to a PostgreSQL database
-2.Stores user credentials securely
+
+▶️ How to Run
+
+1.Clone the repository
+
+2.Install dependencies:
+npm install
+
+
+3.Configure PostgreSQL:
+CREATE DATABASE secrets;
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  password TEXT NOT NULL
+);
+
+
+4.Start the server:
+node index.js
+
+
+Open:
+👉 http://localhost:3000
